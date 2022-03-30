@@ -8,4 +8,4 @@ class PostForm(ModelForm):
     # в класс мета, как обычно, надо написать модель, по которой будет строиться форма и нужные нам поля. Мы уже делали что-то похожее с фильтрами.
     class Meta:
         model = Post
-        fields = ['title', 'text', 'cats', 'check_box']
+        fields = ['author', 'post_type','title', 'text', 'cats', 'check_box']

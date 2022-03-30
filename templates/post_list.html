@@ -33,7 +33,8 @@ Post
             <tr>
                         <td>
             <a href="{% url 'new_detail' new.id %}">{{ new.title }}</a> <!-- При нажатии на имя товара в таблице нас теперь будет перекидывать на страницу с самого товара -->
-
+            <a href="{% url 'new_update' new.id %}"><u> Редактировать </u></a>
+            <a href="{% url 'new_delete' new.id %}"><u> Удалить </u></a>
         </td>
                 <td>
                     {{ new.title }}
